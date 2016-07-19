@@ -8,7 +8,7 @@ $brand-color: #b7a172 !default;
 
 
 //## Settings for some of the most global styles.
-$body-bg:               $gray-base !default;
+$body-bg:               $brand-color !default;
 $text-color:            #818286 !default;
 $link-color:            $text-color !default;
 $link-hover-color:      darken($link-color, 10%) !default;
