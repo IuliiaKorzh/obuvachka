@@ -11,21 +11,21 @@ var gulp = require('gulp'),
     cssmin = require('gulp-clean-css');
 
 var path = {
-    build: { //Тут мы укажем куда складывать готовые после сборки файлы
+    build: { 
         html: 'build/',
         js: 'build/js/',
         css: 'build/css/',
         img: 'build/img/',
         fonts: 'build/fonts/'
     },
-    src: { //Пути откуда брать исходники
-        html: 'markup/*.html', //Синтаксис src/*.html говорит gulp что мы хотим взять все файлы с расширением .html
-        js: 'markup/js/main.js',//В стилях и скриптах нам понадобятся только main файлы
+    src: { 
+        html: 'markup/*.html', 
+        js: 'markup/js/main.js',
         style: 'markup/scss/all.scss',
-        img: 'markup/img/**/*.*', //Синтаксис img/**/*.* означает - взять все файлы всех расширений из папки и из вложенных каталогов
+        img: 'markup/img/**/*.*',
         fonts: 'markup/fonts/**/*.*'
     },
-    watch: { //Тут мы укажем, за изменением каких файлов мы хотим наблюдать
+    watch: { 
         html: 'markup/**/*.html',
         js: 'markup/js/**/*.js',
         style: 'markup/scss/**/*.scss',
@@ -36,33 +36,33 @@ var path = {
 };
 
 gulp.task('html:build', function () {
-    gulp.src(path.src.html) //Выберем файлы по нужному пути
-        .pipe(rigger()) //Прогоним через rigger
-        .pipe(gulp.dest(path.build.html)) //Выплюнем их в папку build
+    gulp.src(path.src.html) 
+        .pipe(rigger()) 
+        .pipe(gulp.dest(path.build.html)) 
 });
 
 gulp.task('js:build', function () {
-    gulp.src(path.src.js) //Найдем наш main файл
-        .pipe(rigger()) //Прогоним через rigger
-        .pipe(sourcemaps.init()) //Инициализируем sourcemap
-        .pipe(uglify()) //Сожмем наш js
-        .pipe(sourcemaps.write()) //Пропишем карты
-        .pipe(gulp.dest(path.build.js)) //Выплюнем готовый файл в build
+    gulp.src(path.src.js) 
+        .pipe(rigger()) 
+        .pipe(sourcemaps.init()) 
+        .pipe(uglify()) 
+        .pipe(sourcemaps.write()) 
+        .pipe(gulp.dest(path.build.js)) 
 });
 
 gulp.task('style:build', function () {
-    gulp.src(path.src.style) //Выберем наш main.scss
-        .pipe(sourcemaps.init()) //То же самое что и с js
-        .pipe(sass()) //Скомпилируем
-        .pipe(prefixer()) //Добавим вендорные префиксы
-        .pipe(cssmin()) //Сожмем
+    gulp.src(path.src.style) 
+        .pipe(sourcemaps.init()) 
+        .pipe(sass()) 
+        .pipe(prefixer()) 
+        .pipe(cssmin()) 
         .pipe(sourcemaps.write())
         .pipe(gulp.dest(path.build.css));
 });
 
 gulp.task('image:build', function () {
-    gulp.src(path.src.img) //Выберем наши картинки
-        .pipe(imagemin({ //Сожмем их
+    gulp.src(path.src.img) 
+        .pipe(imagemin({ 
             progressive: true,
             svgoPlugins: [{removeViewBox: false}],
             interlaced: true
