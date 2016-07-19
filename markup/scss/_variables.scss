@@ -2,14 +2,14 @@
 $gray-base:   #efefef !default;
 $gray-darker: #a4a4a6 !default;
 $gray-dark:   #c6c6c6 !default;
-$gray:        #818286 !default;
+$gray:        #3e3939 !default;
 
-$brand-color: #b7a172 !default;
+$brand-color: #99cc33 !default;
 
 
 //## Settings for some of the most global styles.
-$body-bg:               $brand-color !default;
-$text-color:            #818286 !default;
+$body-bg:               #fff !default;
+$text-color:            #3e3939 !default;
 $link-color:            $text-color !default;
 $link-hover-color:      darken($link-color, 10%) !default;
 $link-hover-decoration: underline !default;
@@ -17,8 +17,8 @@ $link-hover-decoration: underline !default;
 
 //## Typography
 $font-family-base:        Arial, Helvetica, Tahoma, sans-serif !default;
-$font-size-base:          14px;
-$line-height-base:        1.4;
+$font-size-base:          18px;
+$line-height-base:        1.33;
 
 $headings-font-family:    inherit !default;
 $headings-font-weight:    500 !default;
@@ -41,20 +41,20 @@ $margin-h6:               2px 0 !default;
 
 
 //## Buttons
-$btn-font-size:                  17px !default;
+$btn-font-size:                  12px !default;
 $btn-font-weight:                normal !default;
 $btn-border-width:               1px !default;
 $btn-border-radius:              0 !default;
-$btn-padding-vertical:           10px !default;
-$btn-padding-horizontal:         20px !default;
+$btn-padding-vertical:           15px !default;
+$btn-padding-horizontal:         40px !default;
 
 $btn-brand-color:                #fff !default;
 $btn-brand-bg:                   $brand-color !default;
 $btn-brand-border:               $brand-color !default;
 
 $btn-brand-color-hover:          #fff !default;
-$btn-brand-bg-hover:             darken($brand-color, 10%) !default;
-$btn-brand-border-hover:         darken($brand-color, 10%) !default;
+$btn-brand-bg-hover:             lighten($brand-color, 10%) !default;
+$btn-brand-border-hover:         lighten($brand-color, 10%) !default;
 
 $btn-link-disabled-color:        #ccc !default;
 
@@ -63,12 +63,12 @@ $btn-link-disabled-color:        #ccc !default;
 $input-bg:                       #fff !default;
 $input-bg-disabled:              #ccc !default;
 $input-color:                    $text-color !default;
-$input-border:                   #ccc !default;
+$input-border:                   $brand-color !default;
 $input-border-radius:            0 !default;
 $input-border-focus:             #66afe9 !default;
-$input-color-placeholder:        #999 !default;
+$input-color-placeholder:        #ccc !default;
 
-$input-height-base:              40px  !default;
+$input-height-base:              65px  !default;
 $input-font-size:                16px !default;
 $input-line-height:              1.4 !default;
 $input-border-width:             1px !default;

@@ -1,5 +1,5 @@
 
-html {
+html{
 	box-sizing: border-box;
 	font-family: sans-serif;
 	-ms-text-size-adjust: 100%;
@@ -11,25 +11,27 @@ html {
 *:after {
   box-sizing: inherit;
 }
-body {
+body{
 	font-family: $font-family-base;
 	font-size: $font-size-base;
 	color: $text-color;
 	background: $body-bg;
 }
-a {
+a{
 	color: $link-color;
 	&:hover {
 		color: $link-hover-color;
 		text-decoration: $link-hover-decoration;
 	}
 }
-img {
+img{
 	max-width: 100%;
 	height: auto;
 	vertical-align: middle;
 }
-
+p{
+	margin: 20px 0;
+}
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: $headings-font-family;

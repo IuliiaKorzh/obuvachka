@@ -67,7 +67,7 @@ gulp.task('image:build', function () {
             svgoPlugins: [{removeViewBox: false}],
             interlaced: true
         }))
-        .pipe(gulp.dest(path.build.img)); //И бросим в build
+        .pipe(gulp.dest(path.build.img)); 
 });
 
 gulp.task('fonts:build', function() {
