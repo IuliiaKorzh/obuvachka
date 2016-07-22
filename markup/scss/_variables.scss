@@ -1,3 +1,47 @@
+@font-face {
+    font-family: 'Avantgarde Gothic';
+    src: url('../fonts/avantgardegothicc-book-webfont.woff2') format('woff2'),
+         url('../fonts/avantgardegothicc-book-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Avantgarde Gothic';
+    src: url('../fonts/avantgardegothicc-oblique-webfont.woff2') format('woff2'),
+         url('../fonts/avantgardegothicc-oblique-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Avantgarde Gothic';
+    src: url('../fonts/avantgardegothicc-demi-webfont.woff2') format('woff2'),
+         url('../fonts/avantgardegothicc-demi-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Avantgarde Gothic';
+    src: url('../fonts/avantgardegothicc-dmoblique-webfont.woff2') format('woff2'),
+         url('../fonts/avantgardegothicc-dmoblique-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/helveticaneuecyr-light-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneuecyr-light-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Tatiana';
+    src: url('../fonts/tatianac-webfont.woff2') format('woff2'),
+         url('../fonts/tatianac-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
 //## Gray and brand colors
 $gray-base:   #efefef !default;
 $gray-darker: #a4a4a6 !default;
@@ -16,17 +60,17 @@ $link-hover-decoration: underline !default;
 
 
 //## Typography
-$font-family-base:        Arial, Helvetica, Tahoma, sans-serif !default;
+$font-family-base:        'Helvetica Neue', Helvetica, Tahoma, sans-serif !default;
 $font-size-base:          18px;
 $line-height-base:        1.33;
 
-$headings-font-family:    inherit !default;
-$headings-font-weight:    500 !default;
+$headings-font-family:    'Avantgarde Gothic', Helvetica, Tahoma, sans-serif !default;
+$headings-font-weight:    400 !default;
 $headings-line-height:    1.1 !default;
 $headings-color:          inherit !default;
 
 $font-size-h1:            floor(($font-size-base * 2.6)) !default; // ~36px
-$font-size-h2:            floor(($font-size-base * 2.15)) !default; // ~30px
+$font-size-h2:            ($font-size-base * 2) !default; // ~36px
 $font-size-h3:            ceil(($font-size-base * 1.7)) !default; // ~24px
 $font-size-h4:            ceil(($font-size-base * 1.25)) !default; // ~18px
 $font-size-h5:            $font-size-base !default;
@@ -41,20 +85,35 @@ $margin-h6:               2px 0 !default;
 
 
 //## Buttons
-$btn-font-size:                  12px !default;
-$btn-font-weight:                normal !default;
+$btn-font-family:                'Avantgarde Gothic', Helvetica, Tahoma, sans-serif !default;
+$btn-font-size:                  18px !default;
+$btn-lg-font-size:               24px !default;
+$btn-font-weight:                400 !default;
+$btn-line-height:                1.1 !default;
+
+
 $btn-border-width:               1px !default;
-$btn-border-radius:              0 !default;
-$btn-padding-vertical:           15px !default;
-$btn-padding-horizontal:         40px !default;
+$btn-border-radius:              7px !default;
+
+$btn-padding-vertical:           7px !default;
+$btn-lg-padding-vertical:        15px !default;
+
+$btn-padding-horizontal:         10px !default;
+$btn-lg-padding-horizontal:      20px !default;
 
 $btn-brand-color:                #fff !default;
 $btn-brand-bg:                   $brand-color !default;
 $btn-brand-border:               $brand-color !default;
-
 $btn-brand-color-hover:          #fff !default;
 $btn-brand-bg-hover:             lighten($brand-color, 10%) !default;
 $btn-brand-border-hover:         lighten($brand-color, 10%) !default;
+
+$btn-clean-color:                #000 !default;
+$btn-clean-bg:                   #fff !default;
+$btn-clean-border:               $brand-color !default;                  
+$btn-clean-color-hover:          #fff !default;    
+$btn-clean-bg-hover:             $brand-color !default;
+$btn-clean-border-hover:         $brand-color !default;
 
 $btn-link-disabled-color:        #ccc !default;
 
