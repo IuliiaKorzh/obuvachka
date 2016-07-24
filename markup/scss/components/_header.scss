@@ -1,0 +1,70 @@
+.wrapper{
+	overflow: hidden;
+}
+.header{
+	margin-bottom: 24px;
+	font-family: 'Avantgarde Gothic', Helvetica, Tahoma, sans-serif;
+	&__top{
+		padding-top: 20px;
+		margin-bottom: 25px;
+	}
+	&__bottom{
+		padding-bottom: 20px;
+		border-bottom: 1px solid black;
+	}
+	&__item{
+		display: inline-block;
+		margin: 0px 10px;
+		&:first-child{
+			margin-left: 0;
+		}
+	}
+	&__link{
+		display: block;
+		&:hover{
+			text-decoration: none;
+			color: #7e7f84;
+		}
+	}
+	&__nav{
+		border-bottom: 1px solid black;
+		&-item{
+			display: inline-block;
+		}
+		&-link{
+			display: block;
+			padding: 10px 20px;
+			border-bottom: 3px solid transparent;
+			&:hover{
+				border-bottom: 3px solid #9c3;
+				text-decoration: none;
+			}
+		}
+	}
+	&__logo{
+		display: block;
+		margin: 0 20px;
+		vertical-align: middle;
+	}
+	&__search{
+		background: #fff;
+		border: none;
+		border-bottom: 1px solid black;
+		margin-right: 10px;
+		width: 320px;
+	}
+	&__submit{
+		background: #fff;
+		border: none;
+	}
+}
+input[type="search"]{
+	padding: 15px 5px 5px;
+}
+
+.pull-left{
+	float: left;
+}
+.pull-right{
+	float: right;
+}
