@@ -2,198 +2,300 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Obuvachka - Главная</title>
-    <link rel="stylesheet" href="../build/css/all.css">
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Obuvachka</title>
+	<link rel="stylesheet" href="../css/all.css">
 </head>
 <body>
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-  	<meta charset="UTF-8">
-  	<meta name="viewport" content="width=device-width, initial-scale=1">
-  	<title>Obuvachka</title>
-  	<link rel="stylesheet" href="../../css/all.css">
-  </head>
-  <body>
-  <div class="wrapper">
-  <!-- ПОЯВИЛСЯ ГОРИЗОНТАЛЬНЫЙ СКРОЛ, СКРЫЛ ВРАПЕРОМ. НУЖНО ВЫЯСНИТЬ, ОТКУДА ОН ПОЯВИЛСЯ. -->
-  	<header class="header">
-  			<div class="header__top">
-  				<div class="row">
-  					<div class="col-s-12">
-  						<div class="container">
-  								<ul class="header__top-list pull-left">
-  									<li class="header__item">
-  										<div class="ico__phone">
-  											<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" width="16" height="16" viewBox="0 0 16 16"><defs><style>.cls-1{fill:#7e7f84;filter:url(#color-overlay-1);fill-rule:evenodd}</style><filter id="color-overlay-1" filterUnits="userSpaceOnUse"><feFlood/><feComposite operator="in" in2="SourceGraphic"/><feBlend in2="SourceGraphic" result="solidFill"/></filter></defs><path d="M15.937.568l-.01 3.604c-.004.202-.171.322-.373.327h-.256a.359.359 0 0 1-.356-.373l.013-2.42-4.287 4.269a.498.498 0 1 1-.705-.706l4.272-4.254-2.355-.006a.41.41 0 0 1-.419-.373V.38a.385.385 0 0 1 .373-.373l3.575.015.01-.001.182-.005a.342.342 0 0 1 .255.103c.066.064.09.155.087.256l-.019.183c0 .003.013.006.013.01zM11.851 9.77c.189 0 .363.043.505.13.327.2 2.997 1.979 3.241 2.15.401.282.562.976.121 1.607-.016.022-1.695 2.343-2.65 2.343h-.022c-2.728-.088-5.921-2.734-8.12-4.938C2.726 8.858.086 5.66-.001 2.938-.032 1.969 2.314.265 2.337.249c.243-.17.523-.25.787-.25.334 0 .642.129.814.368.183.252 1.95 2.938 2.145 3.245.207.326.178.809-.077 1.293a80.156 80.156 0 0 1-.794 1.417c.237.338.846 1.134 2.08 2.37 1.241 1.245 2.029 1.849 2.365 2.085.38-.218 1.159-.662 1.416-.797.264-.139.534-.21.778-.21zm-2.249 2.189l-.518-.365c-.384-.27-1.218-.914-2.498-2.196-1.274-1.277-1.919-2.116-2.19-2.501l-.363-.519.313-.551c.403-.707.686-1.213.777-1.386a.724.724 0 0 0 .1-.322 285.118 285.118 0 0 0-2.058-3.117.162.162 0 0 0-.041-.004.397.397 0 0 0-.218.07c-.868.629-1.782 1.534-1.908 1.887.086 1.866 1.729 4.492 4.632 7.401 2.904 2.909 5.528 4.555 7.397 4.643.351-.131 1.249-1.047 1.881-1.924.076-.109.082-.196.075-.236-.41-.282-2.738-1.83-3.12-2.07l-.012-.001a.703.703 0 0 0-.314.096c-.21.11-.853.475-1.386.78l-.549.315z" class="cls-1"/></svg>
-  										</div>
-  									</li>
-  									<li class="header__item">
-  										<div class="header__phone">
-  											+38050876-67-76 
-  										</div>
-  									</li>
-  									<li class="header__item">
-  										<div class="header__phone">
-  											+38063332-32-32
-  										</div>
-  									</li>
-  									<li class="header__item">
-  										<label href="#" class="btn btn--clean" for="modal">
-  											Заказать звонок 
-  										</label>										
-  									</li>
-  								<!-- Modal-->
-  									<div class="modal">
-  									  	<input class="modal--open" id="modal" type="checkbox" hidden>
-  									  	<div class="modal__wrap" aria-hidden="true" role="dialog">
-  									    	<label class="modal--overlay" for="modal"></label>
-  									    	<div class="modal__dialog">
-  									      		<div class="dialog__header text-center border-bottom">
-  									        		<h2>Заказать звонок</h2>
-  									       			<label class="btn--close" for="modal" aria-hidden="true">×</label>
-  									      		</div>
-  									      		<div class="dialog__body text-center">
-  										          <form>
-  										          	<p>Имя</p>
-  											         <input name="name" placeholder="Ваше имя" class="textbox" required />
-  											        <p>Телефон</p>
-  											         <input name="tel" placeholder="Ваш контактный телефон" class="textbox" type="tel" required />
-  											         <p>Коментарий</p>
-  										             <textarea rows="4" cols="50" name="subject" placeholder="Коментарий" class="message" required></textarea>
-  										              <input name="submit" class="btn btn--md btn--brand btn-pill" type="submit" value="перезвоните мне" />
-  										          </form>
-  									      		</div>
-  									    	</div>
-  									  </div>
-  									</div>									
-  								</ul>
-  								<ul class="header__list pull-right">
-  									<li class="header__item">
-  										<a href="#" class="header__size-grid">
-  											Таблица размеров
-  										</a>
-  									</li>
-  									<li class="header__item">
-  										<a href="#" class="ico__wish-list">
-  											<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" width="25" height="23" viewBox="0 0 25 23"><defs><style>.cls-1{fill:#7e7f84;filter:url(#color-overlay-1);fill-rule:evenodd}</style><filter id="color-overlay-1" filterUnits="userSpaceOnUse"><feFlood/><feComposite operator="in" in2="SourceGraphic"/><feBlend in2="SourceGraphic" result="solidFill"/></filter></defs><path d="M7.006 1.615c.764 0 2.145.373 4.385 2.627l1.111 1.117 1.094-1.135c1.556-1.614 3.211-2.617 4.32-2.617 1.495 0 2.674.522 3.823 1.694a5.86 5.86 0 0 1 1.68 4.133 5.871 5.871 0 0 1-1.69 4.146c-.089.093-4.797 5.282-8.742 9.631a.733.733 0 0 1-1.017.006c-.961-1.092-7.928-9.006-8.739-9.833a5.868 5.868 0 0 1-1.68-4.136c0-1.561.597-3.028 1.681-4.133 1.055-1.076 2.289-1.5 3.774-1.5m0-1.592c-1.864 0-3.507.569-4.875 1.965-2.852 2.905-2.852 7.616 0 10.523.813.831 8.715 9.81 8.715 9.81a2.273 2.273 0 0 0 3.259 0s8.643-9.529 8.735-9.624c2.851-2.907 2.851-7.618 0-10.524C21.425.731 19.844.015 17.916.015c-1.842 0-3.897 1.5-5.431 3.092C10.902 1.515 8.911.023 7.006.023z" class="cls-1"/></svg>
-  										</a>
-  									</li>
-  									<li class="header__item">
-  										<a href="#" class="ico__cart">
-  											<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" width="27" height="27" viewBox="0 0 27 27"><defs><style>.cls-1{fill:#7e7f84;filter:url(#color-overlay-1);fill-rule:evenodd}</style><filter id="color-overlay-1" filterUnits="userSpaceOnUse"><feFlood/><feComposite operator="in" in2="SourceGraphic"/><feBlend in2="SourceGraphic" result="solidFill"/></filter></defs><path d="M26.943 8.085l-4.032 12.236a.843.843 0 0 1-.792.573H10.68a.845.845 0 0 1-.81-.631L5.187 2.578c-.239-.849-.589-.849-.704-.849H.854A.854.854 0 0 1 .012.864c0-.478.377-.865.842-.865h3.629c.521 0 1.789.205 2.323 2.105l1.361 4.824h17.984c.274 0 .53.137.688.367.157.23.196.525.104.79zM8.64 8.657l2.678 10.507h10.209l3.427-10.507H8.64zm3.591 13.988c1.17 0 2.119.975 2.119 2.178 0 1.202-.949 2.176-2.119 2.176-1.17 0-2.118-.974-2.118-2.176 0-1.203.948-2.178 2.118-2.178zm7.627 0c1.17 0 2.118.975 2.118 2.178 0 1.202-.948 2.176-2.118 2.176s-2.119-.974-2.119-2.176c0-1.203.949-2.178 2.119-2.178z" class="cls-1"/></svg>
-  										</a>
-  									</li>
-  								</ul>
-  						</div>
-  					</div>
-  				</div>
-  			</div>
-  			<div class="header__bottom">
-  				<div class="row">
-  					<div class="container">
-  						<div class="col-s-12">
-  							<ul class="header__list text-center">
-  								<li class="header__item">
-  									<a href="index.html" class="header__link">Главная </a>
-  								</li>
-  								<li class="header__item">
-  									<a href="about.html" class="header__link">О нас </a>
-  								</li>
-  								<li class="header__item">
-  									<a href="partnership.html" class="header__link">Оптовикам   </a>
-  								</li>
-  								<li class="header__item">
-  									<a href="index.html" class="header__logo">
-  										<img src="img/logo-black.png" alt="OBUVACHKA">
-  									</a>
-  								</li>
-  								<li class="header__item">
-  									<a href="contacts.html" class="header__link">Контакты </a>
-  								</li>
-  								<li class="header__item">
-  									<a href="shipping.html" class="header__link">Доставка и оплата</a>
-  								</li>
-  							</ul>
-  						</div>
-  					</div>
-  				</div>
-  			</div>
-  		<div class="header__nav">
-  			<div class="row">
-  				<div class="col-s-12">
-  					<div class="container">
-  						<ul class="header__nav-list pull-left">
-  							<li class="header__nav-item">
-  								<a href="#" class="header__nav-link">Женщинам  </a>
-  							</li>
-  							<li class="header__nav-item">
-  								<a href="#" class="header__nav-link">Мужчинам </a>
-  							</li>
-  							<li class="header__nav-item">
-  								<a href="#" class="header__nav-link">Детям</a>
-  							</li>
-  							<li class="header__nav-item">
-  								<a href="#" class="header__nav-link">Акции</a>
-  							</li>
-  						</ul>
-  						<form action="#" class="search-box pull-right">
-  							<div class="form-control">
-  								<input type="search" class="header__search">
-  								<button type="submit" class="header__submit" value="go">
-  									<i class="icon-location"></i>
-  								</button>
-  							</div>
-  						</form>
-  					</div>
-  				</div>
-  			</div>
-  		</div>
-  	</header>
-  </div>
-  	<script src="js/main.js"></script>
-  </body>
-  
-  </html>
-	<main class="main">
-		<div class="container">
-			<section class="row">
-				<div class="col-xxl-12">
-					<!-- Gallery -->				
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Obuvachka</title>
+		<link rel="stylesheet" href="../../css/all.css">
+	</head>
+	<body>
+	<div class="wrapper">
+	<!-- ПОЯВИЛСЯ ГОРИЗОНТАЛЬНЫЙ СКРОЛ, СКРЫЛ ВРАПЕРОМ. НУЖНО ВЫЯСНИТЬ, ОТКУДА ОН ПОЯВИЛСЯ. -->
+		<header class="header">
+				<div class="header__top">
+					<div class="row">
+						<div class="col-s-12">
+							<div class="container">
+									<ul class="header__top-list pull-left">
+										<li class="header__item">
+											<div class="ico__phone">
+												<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" width="16" height="16" viewBox="0 0 16 16"><defs><style>.cls-1{fill:#7e7f84;filter:url(#color-overlay-1);fill-rule:evenodd}</style><filter id="color-overlay-1" filterUnits="userSpaceOnUse"><feFlood/><feComposite operator="in" in2="SourceGraphic"/><feBlend in2="SourceGraphic" result="solidFill"/></filter></defs><path d="M15.937.568l-.01 3.604c-.004.202-.171.322-.373.327h-.256a.359.359 0 0 1-.356-.373l.013-2.42-4.287 4.269a.498.498 0 1 1-.705-.706l4.272-4.254-2.355-.006a.41.41 0 0 1-.419-.373V.38a.385.385 0 0 1 .373-.373l3.575.015.01-.001.182-.005a.342.342 0 0 1 .255.103c.066.064.09.155.087.256l-.019.183c0 .003.013.006.013.01zM11.851 9.77c.189 0 .363.043.505.13.327.2 2.997 1.979 3.241 2.15.401.282.562.976.121 1.607-.016.022-1.695 2.343-2.65 2.343h-.022c-2.728-.088-5.921-2.734-8.12-4.938C2.726 8.858.086 5.66-.001 2.938-.032 1.969 2.314.265 2.337.249c.243-.17.523-.25.787-.25.334 0 .642.129.814.368.183.252 1.95 2.938 2.145 3.245.207.326.178.809-.077 1.293a80.156 80.156 0 0 1-.794 1.417c.237.338.846 1.134 2.08 2.37 1.241 1.245 2.029 1.849 2.365 2.085.38-.218 1.159-.662 1.416-.797.264-.139.534-.21.778-.21zm-2.249 2.189l-.518-.365c-.384-.27-1.218-.914-2.498-2.196-1.274-1.277-1.919-2.116-2.19-2.501l-.363-.519.313-.551c.403-.707.686-1.213.777-1.386a.724.724 0 0 0 .1-.322 285.118 285.118 0 0 0-2.058-3.117.162.162 0 0 0-.041-.004.397.397 0 0 0-.218.07c-.868.629-1.782 1.534-1.908 1.887.086 1.866 1.729 4.492 4.632 7.401 2.904 2.909 5.528 4.555 7.397 4.643.351-.131 1.249-1.047 1.881-1.924.076-.109.082-.196.075-.236-.41-.282-2.738-1.83-3.12-2.07l-.012-.001a.703.703 0 0 0-.314.096c-.21.11-.853.475-1.386.78l-.549.315z" class="cls-1"/></svg>
+											</div>
+										</li>
+										<li class="header__item">
+											<div class="header__phone">
+												+38050876-67-76 
+											</div>
+										</li>
+										<li class="header__item">
+											<div class="header__phone">
+												+38063332-32-32
+											</div>
+										</li>
+										<li class="header__item">
+											<label href="#" class="btn btn--clean" for="modal">
+												Заказать звонок 
+											</label>										
+										</li>
+									<!-- Modal-->
+										<div class="modal">
+										  	<input class="modal--open" id="modal" type="checkbox" hidden>
+										  	<div class="modal__wrap" aria-hidden="true" role="dialog">
+										    	<label class="modal--overlay" for="modal"></label>
+										    	<div class="modal__dialog">
+										      		<div class="dialog__header text-center border-bottom">
+										        		<h2>Заказать звонок</h2>
+										       			<label class="btn--close" for="modal" aria-hidden="true">×</label>
+										      		</div>
+										      		<div class="dialog__body text-center">
+											          <form>
+											          	<p>Имя</p>
+												         <input name="name" placeholder="Ваше имя" class="textbox" required />
+												        <p>Телефон</p>
+												         <input name="tel" placeholder="Ваш контактный телефон" class="textbox" type="tel" required />
+												         <p>Коментарий</p>
+											             <textarea rows="4" cols="50" name="subject" placeholder="Коментарий" class="message" required></textarea>
+											              <input name="submit" class="btn btn--md btn--brand btn-pill" type="submit" value="перезвоните мне" />
+											          </form>
+										      		</div>
+										    	</div>
+										  </div>
+										</div>									
+									</ul>
+									<ul class="header__list pull-right">
+										<li class="header__item">
+											<a href="#" class="header__size-grid">
+												Таблица размеров
+											</a>
+										</li>
+										<li class="header__item">
+											<a href="#" class="ico__wish-list">
+												<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" width="25" height="23" viewBox="0 0 25 23"><defs><style>.cls-1{fill:#7e7f84;filter:url(#color-overlay-1);fill-rule:evenodd}</style><filter id="color-overlay-1" filterUnits="userSpaceOnUse"><feFlood/><feComposite operator="in" in2="SourceGraphic"/><feBlend in2="SourceGraphic" result="solidFill"/></filter></defs><path d="M7.006 1.615c.764 0 2.145.373 4.385 2.627l1.111 1.117 1.094-1.135c1.556-1.614 3.211-2.617 4.32-2.617 1.495 0 2.674.522 3.823 1.694a5.86 5.86 0 0 1 1.68 4.133 5.871 5.871 0 0 1-1.69 4.146c-.089.093-4.797 5.282-8.742 9.631a.733.733 0 0 1-1.017.006c-.961-1.092-7.928-9.006-8.739-9.833a5.868 5.868 0 0 1-1.68-4.136c0-1.561.597-3.028 1.681-4.133 1.055-1.076 2.289-1.5 3.774-1.5m0-1.592c-1.864 0-3.507.569-4.875 1.965-2.852 2.905-2.852 7.616 0 10.523.813.831 8.715 9.81 8.715 9.81a2.273 2.273 0 0 0 3.259 0s8.643-9.529 8.735-9.624c2.851-2.907 2.851-7.618 0-10.524C21.425.731 19.844.015 17.916.015c-1.842 0-3.897 1.5-5.431 3.092C10.902 1.515 8.911.023 7.006.023z" class="cls-1"/></svg>
+											</a>
+										</li>
+										<li class="header__item">
+											<a href="#" class="ico__cart">
+												<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" width="27" height="27" viewBox="0 0 27 27"><defs><style>.cls-1{fill:#7e7f84;filter:url(#color-overlay-1);fill-rule:evenodd}</style><filter id="color-overlay-1" filterUnits="userSpaceOnUse"><feFlood/><feComposite operator="in" in2="SourceGraphic"/><feBlend in2="SourceGraphic" result="solidFill"/></filter></defs><path d="M26.943 8.085l-4.032 12.236a.843.843 0 0 1-.792.573H10.68a.845.845 0 0 1-.81-.631L5.187 2.578c-.239-.849-.589-.849-.704-.849H.854A.854.854 0 0 1 .012.864c0-.478.377-.865.842-.865h3.629c.521 0 1.789.205 2.323 2.105l1.361 4.824h17.984c.274 0 .53.137.688.367.157.23.196.525.104.79zM8.64 8.657l2.678 10.507h10.209l3.427-10.507H8.64zm3.591 13.988c1.17 0 2.119.975 2.119 2.178 0 1.202-.949 2.176-2.119 2.176-1.17 0-2.118-.974-2.118-2.176 0-1.203.948-2.178 2.118-2.178zm7.627 0c1.17 0 2.118.975 2.118 2.178 0 1.202-.948 2.176-2.118 2.176s-2.119-.974-2.119-2.176c0-1.203.949-2.178 2.119-2.178z" class="cls-1"/></svg>
+											</a>
+										</li>
+									</ul>
+							</div>
+						</div>
+					</div>
 				</div>
-			</section>	
-			<section class="row">
-				<div class="col-xxl-12">
-					<!-- Promo text -->				
+				<div class="header__bottom">
+					<div class="row">
+						<div class="container">
+							<div class="col-s-12">
+								<ul class="header__list text-center">
+									<li class="header__item">
+										<a href="index.html" class="header__link">Главная </a>
+									</li>
+									<li class="header__item">
+										<a href="about.html" class="header__link">О нас </a>
+									</li>
+									<li class="header__item">
+										<a href="partnership.html" class="header__link">Оптовикам   </a>
+									</li>
+									<li class="header__item">
+										<a href="index.html" class="header__logo">
+											<img src="img/logo-black.png" alt="OBUVACHKA">
+										</a>
+									</li>
+									<li class="header__item">
+										<a href="contacts.html" class="header__link">Контакты </a>
+									</li>
+									<li class="header__item">
+										<a href="shipping.html" class="header__link">Доставка и оплата</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
 				</div>
-			</section>
-			<section class="row">
-				<div class="col-xxl-12">
-					<div class="promo">
-						<ul class="promo__product">
-							<li class="product__other"><a href="#"><img src="img/krasovki.png" class="advertising" alt=""><span class="prices first">
-								<p class="shoes">Туфли</p>
-								<p class="price">699 грн</p>
-							</span></a></li>
-							<li class="product__other"><a href="#"><img src="img/children's-jackets.png" class="advertising" alt=""><span class="prices second">
-								<p class="shoes">Пуховики детские</p>
-								<p class="price"><span class="ot">от</span> 870 грн</p>
-							</span></a></li>
-							<li class="product__other"><a href="#"><img src="img/jackets.png" class="advertising" alt=""><span class="prices the-third">
-								<p class="shoes">Верхняя одежда</p>
-								<p class="price">от 670 грн</p>
-							</span></a></li>
-							<li class="product__other"><a href="#"><img src="img/baby-shoes.png" class="advertising" alt=""><span class="prices fourth">
-								<p class="shoes">Луноходы</p>
-								<p class="price">970 грн</p>
-							</span></a></li>
-						</ul>
-					</div>				
+			<div class="header__nav">
+				<div class="row">
+					<div class="col-s-12">
+						<div class="container">
+							<ul class="header__nav-list pull-left">
+								<li class="header__nav-item">
+									<a href="#" class="header__nav-link">Женщинам  </a>
+								</li>
+								<li class="header__nav-item">
+									<a href="#" class="header__nav-link">Мужчинам </a>
+								</li>
+								<li class="header__nav-item">
+									<a href="#" class="header__nav-link">Детям</a>
+								</li>
+								<li class="header__nav-item">
+									<a href="#" class="header__nav-link">Акции</a>
+								</li>
+							</ul>
+							<form action="#" class="search-box pull-right">
+								<div class="form-control">
+									<input type="search" class="header__search">
+									<button type="submit" class="header__submit" value="go">
+										<i class="icon-location"></i>
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
 				</div>
-			</section>				
+			</div>
+		</header>
+	</div>
+		<script src="js/main.js"></script>
+	</body>
+	
+	</html>
+
+	
+<!-- PRODUCT-ITEM -->
+<div class="product">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-5">
+				<div class="product__gallery"></div>
+			</div>
+			<div class="col-md-1"></div>
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="product__block">
+							<h2 class="product__name">
+								Пуховик из нейлона 
+							</h2>
+							<div class="product__article">
+								Артикул: 675388
+							</div>
+						</div>
+					</div>
+				</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="product__block">
+								<div class="product__price product__price--new">
+									12 000. 00 грн
+								</div>
+								<div class="product__price product__price--old">
+									13 872. 00 грн
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="product__block">
+								<h3 class="product__heading">
+									Цвет
+								</h3>
+								<ul class="product__color-list">
+									<li class="product__color-item">
+										<a href="#" class="product__color-link product__color-link--grey"></a>
+									</li>
+									<li class="product__color-item">
+										<a href="#" class="product__color-link product__color-link--black product__color-link--active"></a>
+									</li>
+									<li class="product__color-item">
+										<a href="#" class="product__color-link product__color-link--red"></a>
+									</li>
+									<li class="product__color-item">
+										<a href="#" class="product__color-link product__color-link--green"></a>
+									</li>
+									<li class="product__color-item">
+										<a href="#" class="product__color-link product__color-link--violet"></a>
+									</li>
+									<li class="product__color-item">
+										<a href="#" class="product__color-link product__color-link--blue"></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="product__block">
+								<h3 class="product__heading">
+									Размер
+								</h3>
+								<ul class="product__size-list">
+									<li class="product__size-item">
+										<a href="#" class="product__size-link">xxs</a>
+									</li>
+									<li class="product__size-item">
+										<a href="#" class="product__size-link product__size-link--active">xs</a>
+									</li>
+									<li class="product__size-item">
+										<a href="#" class="product__size-link">s</a>
+									</li>
+									<li class="product__size-item">
+										<a href="#" class="product__size-link">m</a>
+									</li>
+									<li class="product__size-item">
+										<a href="#" class="product__size-link">l</a>
+									</li>
+									<li class="product__size-item">
+										<a href="#" class="product__size-link">xl</a>
+									</li>
+									<li class="product__size-item">
+										<a href="#" class="product__size-link">xxl</a>
+									</li>
+								</ul>
+								<div class="padding-left-block">
+								<a href="#" class="product__size-grid">Таблица размеров</a>
+								<div class="product__availability">
+									<div class="product__availability-ico">ICO</div>
+									<div class="product__heading product__heading--success">
+										В наличии
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<ul class="product__list">
+											<li class="product__item">
+											 <a href="#" class="product__link">
+											 	<a href="#" class="btn btn--brand btn--lg">В корзину</a>
+											 </a>
+											</li>
+											<li class="product__item">
+											 <a href="#" class="product__link">
+											 	<a href="#" class="ico__wish-list ico__wish-list--lg">ICO</a>
+											 </a>
+											</li>
+											<li class="product__item">
+											 <a href="#" class="product__link">
+											 	<a href="#" class="btn btn--clean btn--lg">Заказать звонок </a>
+											 </a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<h3 class="product__heading">Описание товара</h3>
+							<div class="product__description">
+								Утепленная парка из тканого смесового х/б. На парке капюшон на флисовой подкладке с оторочкой из искусственного меха и на эластичной кулиске спереди. Молния и двойная защита от ветрах на пуговицах спереди. Карманы на флисовой подкладке, передние карманы с клапаном и боковые карманы. Талия и низ куртки на кулиске. Один внутренний карман на молнии. На подкладке.
+								Утепленная парка из тканого смесового х/б. На парке капюшон на флисовой подкладке с оторочкой из искусственного меха и на эластичной кулиске спереди. Молния и двойная защита от ветрах на пуговицах спереди. 
+							</div>
+						</div>
+					</div>
+				</div>
 		</div>
-	</main>
+</div>
 
 
 
