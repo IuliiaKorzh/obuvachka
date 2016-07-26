@@ -2087,147 +2087,10 @@ input[type="search"] {
   background: #020202;
 }
 
-.product {
-  margin-bottom: 110px;
-}
-
 .product__block {
   border-bottom: 1px solid black;
   margin-bottom: 18px;
   padding-bottom: 18px;
-}
-
-.product__article {
-  font-size: 14px;
-}
-
-.product__price {
-  display: inline-block;
-}
-
-.product__price--new {
-  margin-right: 45px;
-}
-
-.product__price--old {
-  font-size: 18px;
-  color: #99cc33;
-  text-decoration: line-through;
-}
-
-.product__color-item {
-  display: inline-block;
-}
-
-.product__color-link {
-  display: block;
-  height: 48px;
-  width: 48px;
-}
-
-.product__color-link:hover {
-  outline: 1px solid #99cc33;
-}
-
-.product__color-link--active {
-  outline: 1px solid #99cc33;
-}
-
-.product__color-link--grey {
-  background-color: #e8e3e3;
-}
-
-.product__color-link--black {
-  background-color: #24272e;
-}
-
-.product__color-link--red {
-  background-color: #c82121;
-}
-
-.product__color-link--green {
-  background-color: #26452b;
-}
-
-.product__color-link--violet {
-  background-color: #410a7a;
-}
-
-.product__color-link--blue {
-  background-color: #0d7192;
-}
-
-.product__size-list {
-  margin-bottom: 20px;
-}
-
-.product__size-item {
-  display: inline-block;
-}
-
-.product__size-link {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-  font-size: 19px;
-  height: 40px;
-  width: 40px;
-  border: 1px solid #99cc33;
-  text-transform: uppercase;
-}
-
-.product__size-link:hover {
-  outline: 2px solid #99cc33;
-  text-decoration: none;
-}
-
-.product__size-link--active {
-  outline: 2px solid #99cc33;
-}
-
-.product__size-grid {
-  display: inline-block;
-  font-size: 19px;
-  color: #99cc33;
-  border-bottom: 3px solid #99cc33;
-  padding: 0 5px;
-  margin-bottom: 30px;
-}
-
-.product__size-grid:hover {
-  text-decoration: none;
-  color: #7aa329;
-  border-bottom: 3px solid #7aa329;
-}
-
-.product__availability {
-  margin-bottom: 55px;
-}
-
-.product__availability-ico {
-  float: left;
-  margin-right: 25px;
-}
-
-.product__heading--success {
-  color: #99cc33;
-}
-
-.product__item {
-  display: inline-block;
-  margin: 0 53px 10px 0;
-}
-
-.product__item:last-child {
-  margin-right: 0;
-}
-
-.product__link {
-  display: block;
-}
-
-.padding-left-block {
-  padding-left: 50px;
 }
 
 .wrapper {
@@ -2282,7 +2145,7 @@ input[type="search"] {
 }
 
 .header__nav-link:hover {
-  border-bottom: 3px solid #99cc33;
+  border-bottom: 3px solid #9c3;
   text-decoration: none;
 }
 
@@ -2354,3 +2217,5 @@ input[type="search"] {
 .footer__item {
   margin-bottom: 5px;
 }
+
+/*# sourceMappingURL=all.css.map */
