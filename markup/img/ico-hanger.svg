@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="111" height="83" viewBox="0 0 111 83">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        filter: url(#filter-chain-1);
+        fill-rule: evenodd;
+      }
+    </style>
+
+    <filter id="filter-chain-1" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" in="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.449" result="dropBlur"/>
+      <feFlood flood-opacity="0.22"/>
+      <feComposite operator="in" in2="dropBlur" result="dropShadowComp"/>
+      <feComposite in="SourceGraphic" result="shadowed"/>
+      <feFlood flood-color="#9c3"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+      <feBlend in2="shadowed" result="solidFill"/>
+      <feOffset dy="-2" in="SourceAlpha"/>
+      <feGaussianBlur result="innerShadowBlur"/>
+      <feFlood flood-opacity="0.2"/>
+      <feComposite operator="out" in2="innerShadowBlur"/>
+      <feComposite operator="in" in2="SourceAlpha"/>
+      <feBlend in2="solidFill" result="innerShadow"/>
+    </filter>
+  </defs>
+  <path d="M100.985,63.662 C103.859,65.609 105.146,68.684 104.270,71.495 C103.511,73.923 100.849,76.519 95.650,76.519 L15.350,76.519 C10.151,76.519 7.488,73.923 6.730,71.495 C5.853,68.684 7.141,65.609 10.014,63.662 C14.488,60.628 48.464,40.151 53.639,37.033 L53.639,29.052 C53.639,28.033 54.471,27.207 55.501,27.207 C60.242,27.207 64.099,23.386 64.099,18.689 C64.099,13.992 60.242,10.171 55.501,10.171 C50.761,10.171 46.904,13.992 46.904,18.689 C46.904,19.416 46.997,20.143 47.181,20.848 C47.439,21.835 46.841,22.841 45.844,23.096 C44.847,23.349 43.833,22.759 43.576,21.771 C43.313,20.764 43.180,19.727 43.180,18.689 C43.180,11.958 48.706,6.481 55.501,6.481 C62.295,6.481 67.823,11.958 67.823,18.689 C67.823,24.793 63.277,29.867 57.363,30.759 L57.363,37.033 C63.509,40.737 96.596,60.687 100.985,63.662 ZM10.289,70.404 C10.756,71.899 12.695,72.828 15.350,72.828 L95.650,72.828 C98.305,72.828 100.243,71.899 100.711,70.404 C101.102,69.153 100.402,67.737 98.883,66.707 C94.593,63.799 61.880,44.075 55.508,40.235 C49.939,43.581 16.414,63.794 12.116,66.707 C10.598,67.737 9.898,69.153 10.289,70.404 Z" class="cls-1"/>
+</svg>

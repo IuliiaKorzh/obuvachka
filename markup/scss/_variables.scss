@@ -41,7 +41,58 @@
     font-weight: 400;
     font-style: normal;
 }
+$icon-delivery:      "\e902";
+$icon-hanger:        "\e906";
+$icon-medal:         "\e90a";
+$icon-offer-bill:    "\e90e";
+$icon-pay-by-phone:  "\e912";
+$icon-pay-with-card: "\e916";
+$icon-sale:          "\e91a";
+$icon-ship-box:      "\e91e";
+$icon-ship-box2:     "\e922";
+$icon-shop:          "\e926";
+$icon-shopping-bag:  "\e92a";
+$icon-shopping-cart: "\e92e";
+$icon-view:          "\e932";
+$icon-wallet:        "\e936";
 
+@font-face {
+    font-family: 'icomoon2';
+    src:    url('../fonts/icomoon2.eot');
+    src:    url('../fonts/icomoon2.eot') format('embedded-opentype'),
+        url('../fonts/icomoon2.ttf') format('truetype'),
+        url('../fonts/icomoon2.woff') format('woff'),
+        url('../fonts/icomoon2.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:    url('../fonts/fonts/icomoon.eot?vwayeg');
+    src:    url('../fonts/fonts/icomoon.eot?vwayeg#iefix') format('embedded-opentype'),
+        url('../fonts/fonts/icomoon.ttf?vwayeg') format('truetype'),
+        url('../fonts/fonts/icomoon.woff?vwayeg') format('woff'),
+        url('../fonts/fonts/icomoon.svg?vwayeg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    //font-size: 25px;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 //## Gray and brand colors
 $gray-base:   #efefef !default;
 $gray-darker: #a4a4a6 !default;
@@ -121,15 +172,15 @@ $btn-link-disabled-color:        #ccc !default;
 // ## Forms
 $input-bg:                       #fff !default;
 $input-bg-disabled:              #ccc !default;
-$input-color:                    $text-color !default;
+$input-color:                    #bbbaba !default;
 $input-border:                   $brand-color !default;
 $input-border-radius:            0 !default;
 $input-border-focus:             #66afe9 !default;
 $input-color-placeholder:        #ccc !default;
 
-$input-height-base:              65px  !default;
-$input-font-size:                16px !default;
-$input-line-height:              1.4 !default;
+$input-height-base:              40px  !default;
+$input-font-size:                20px !default;
+$input-line-height:              1.3 !default;
 $input-border-width:             1px !default;
 $input-line-height-computed:     floor($input-font-size * $input-line-height) !default;
 
@@ -141,5 +192,6 @@ $form-group-margin-bottom:       15px !default;
 $cursor-disabled:                not-allowed !default;
 
 
-
+$color: #fff;
+$color-green: #98b327;
 

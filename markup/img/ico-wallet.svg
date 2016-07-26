@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="87" height="80" viewBox="0 0 87 80">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        filter: url(#filter-chain-1);
+        fill-rule: evenodd;
+      }
+    </style>
+
+    <filter id="filter-chain-1" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" in="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.449" result="dropBlur"/>
+      <feFlood flood-opacity="0.22"/>
+      <feComposite operator="in" in2="dropBlur" result="dropShadowComp"/>
+      <feComposite in="SourceGraphic" result="shadowed"/>
+      <feFlood flood-color="#9c3"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+      <feBlend in2="shadowed" result="solidFill"/>
+      <feOffset dy="-2" in="SourceAlpha"/>
+      <feGaussianBlur result="innerShadowBlur"/>
+      <feFlood flood-opacity="0.2"/>
+      <feComposite operator="out" in2="innerShadowBlur"/>
+      <feComposite operator="in" in2="SourceAlpha"/>
+      <feBlend in2="solidFill" result="innerShadow"/>
+    </filter>
+  </defs>
+  <path d="M78.043,55.419 L77.991,55.419 L77.991,67.596 C77.991,71.411 74.895,74.513 71.087,74.513 L12.408,74.513 C8.602,74.513 5.505,71.411 5.505,67.596 L5.505,15.070 L5.505,12.403 L5.505,11.593 L5.587,11.593 C5.993,8.163 8.879,5.486 12.408,5.486 L60.624,5.486 C64.432,5.486 67.528,8.589 67.528,12.403 L67.528,17.448 L71.087,17.448 C74.895,17.448 77.991,20.550 77.991,24.365 L77.991,36.397 L78.043,36.397 C79.946,36.397 81.495,37.949 81.495,39.856 L81.495,51.960 C81.495,53.867 79.946,55.419 78.043,55.419 ZM64.076,12.403 C64.076,10.497 62.527,8.945 60.624,8.945 L12.408,8.945 C10.505,8.945 8.956,10.497 8.956,12.403 L8.956,15.070 C8.956,16.976 10.505,17.448 12.408,17.448 L64.076,17.448 L64.076,12.403 ZM74.539,24.365 C74.539,22.458 72.990,20.906 71.087,20.906 L65.802,20.906 L64.076,20.906 L12.408,20.906 C11.145,20.906 9.976,20.540 8.956,19.944 L8.956,67.596 C8.956,69.503 10.505,71.055 12.408,71.055 L71.087,71.055 C72.990,71.055 74.539,69.503 74.539,67.596 L74.539,55.419 L59.022,55.419 C57.119,55.419 55.570,53.867 55.570,51.960 L55.570,39.856 C55.570,37.949 57.119,36.397 59.022,36.397 L74.539,36.397 L74.539,24.365 ZM78.043,39.856 L76.265,39.856 L74.539,39.856 L59.022,39.856 L59.022,51.960 L74.539,51.960 L76.265,51.960 L78.045,51.960 L78.043,39.856 ZM65.016,49.498 C63.217,49.498 61.757,48.036 61.757,46.232 C61.757,44.428 63.217,42.966 65.016,42.966 C66.816,42.966 68.276,44.428 68.276,46.232 C68.276,48.036 66.816,49.498 65.016,49.498 Z" class="cls-1"/>
+</svg>
