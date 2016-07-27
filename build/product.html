@@ -8,15 +8,6 @@
 	<link rel="stylesheet" href="../build/css/all.css">
 </head>
 <body>
-	<!DOCTYPE html>
-	<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Obuvachka</title>
-		<link rel="stylesheet" href="../../css/all.css">
-	</head>
-	<body>
 	<div class="wrapper">
 	<!-- ПОЯВИЛСЯ ГОРИЗОНТАЛЬНЫЙ СКРОЛ, СКРЫЛ ВРАПЕРОМ. НУЖНО ВЫЯСНИТЬ, ОТКУДА ОН ПОЯВИЛСЯ. -->
 		<header class="header">
@@ -51,7 +42,7 @@
 										  	<div class="modal__wrap" aria-hidden="true" role="dialog">
 										    	<label class="modal--overlay" for="modal"></label>
 										    	<div class="modal__dialog">
-										      		<div class="dialog__header text-center border-bottom">
+										      		<div class="dialog__header text-center">
 										        		<h2>Заказать звонок</h2>
 										       			<label class="btn--close" for="modal" aria-hidden="true">×</label>
 										      		</div>
@@ -61,8 +52,8 @@
 												         <input name="name" placeholder="Ваше имя" class="textbox" required />
 												        <p>Телефон</p>
 												         <input name="tel" placeholder="Ваш контактный телефон" class="textbox" type="tel" required />
-												         <p>Коментарий</p>
-											             <textarea rows="4" cols="50" name="subject" placeholder="Коментарий" class="message" required></textarea>
+												         <p>Комментарий</p>
+											             <textarea rows="4" cols="50" name="subject" placeholder="Комментарий" class="message" required></textarea>
 											              <input name="submit" class="btn btn--md btn--brand btn-pill" type="submit" value="перезвоните мне" />
 											          </form>
 										      		</div>
@@ -82,7 +73,7 @@
 											</a>
 										</li>
 										<li class="header__item">
-											<a href="#" class="ico__cart">
+											<a href="checkout.html" class="ico__cart">
 												<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" width="27" height="27" viewBox="0 0 27 27"><defs><style>.cls-1{fill:#7e7f84;filter:url(#color-overlay-1);fill-rule:evenodd}</style><filter id="color-overlay-1" filterUnits="userSpaceOnUse"><feFlood/><feComposite operator="in" in2="SourceGraphic"/><feBlend in2="SourceGraphic" result="solidFill"/></filter></defs><path d="M26.943 8.085l-4.032 12.236a.843.843 0 0 1-.792.573H10.68a.845.845 0 0 1-.81-.631L5.187 2.578c-.239-.849-.589-.849-.704-.849H.854A.854.854 0 0 1 .012.864c0-.478.377-.865.842-.865h3.629c.521 0 1.789.205 2.323 2.105l1.361 4.824h17.984c.274 0 .53.137.688.367.157.23.196.525.104.79zM8.64 8.657l2.678 10.507h10.209l3.427-10.507H8.64zm3.591 13.988c1.17 0 2.119.975 2.119 2.178 0 1.202-.949 2.176-2.119 2.176-1.17 0-2.118-.974-2.118-2.176 0-1.203.948-2.178 2.118-2.178zm7.627 0c1.17 0 2.118.975 2.118 2.178 0 1.202-.948 2.176-2.118 2.176s-2.119-.974-2.119-2.176c0-1.203.949-2.178 2.119-2.178z" class="cls-1"/></svg>
 											</a>
 										</li>
@@ -94,7 +85,7 @@
 				<div class="header__bottom">
 					<div class="row">
 						<div class="container">
-							<div class="col-s-12">
+							<div class="col-sm-12">
 								<ul class="header__list text-center">
 									<li class="header__item">
 										<a href="index.html" class="header__link">Главная </a>
@@ -136,14 +127,28 @@
 									<a href="#" class="header__nav-link">Детям</a>
 								</li>
 								<li class="header__nav-item">
-									<a href="#" class="header__nav-link">Акции</a>
+									<a href="#" class="header__nav-link header__nav-link--active">Акции</a>
 								</li>
 							</ul>
 							<form action="#" class="search-box pull-right">
 								<div class="form-control">
 									<input type="search" class="header__search">
 									<button type="submit" class="header__submit" value="go">
-										<i class="icon-location"></i>
+										<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+											 width="29px" height="29px" viewBox="0 0 512 512" xml:space="preserve">
+	
+										<g>
+											<g>
+												<path d="M338.752,99.482c-65.965-65.974-173.306-65.974-239.277,0c-65.967,65.964-65.967,173.305,0,239.269
+													c63.708,63.712,165.99,65.879,232.342,6.544l13.413,13.413c-3.34,8.56-1.59,18.623,5.311,25.528l70.782,70.782
+													c9.305,9.31,24.397,9.305,33.696,0c9.31-9.299,9.31-24.387,0-33.696l-70.777-70.772c-6.905-6.899-16.988-8.65-25.533-5.311
+													l-13.413-13.423C404.636,265.465,402.463,163.188,338.752,99.482z M119.698,318.539c-54.819-54.819-54.819-144.015,0-198.834
+													c54.819-54.83,144.017-54.819,198.836,0s54.819,144.02,0,198.839S174.517,373.358,119.698,318.539z"/>
+												<path d="M153.1,151.877c23.944-23.95,51.774-41.331,81.037-52.169c-33.153-1.886-68.66,11.014-95.909,38.253
+													c-27.624,27.626-40.488,63.746-38.142,97.302C110.841,205.137,128.511,176.46,153.1,151.877z"/>
+											</g>
+										</g>
+										</svg>
 									</button>
 								</div>
 							</form>
@@ -153,15 +158,20 @@
 			</div>
 		</header>
 	</div>
-		<script src="js/main.js"></script>
-	</body>
-	
-	</html>
 
 	
 <!-- PRODUCT-ITEM -->
 	<div class="product">
 		<div class="container">
+			<div class="breadcrumbs">
+				<ul>
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Детям</a></li>
+					<li><a href="#">Верхняя Одежда</a></li>
+					<li><span>Пуховик из нейлона</span></li>
+				</ul>
+			</div>
+
 			<div class="row">
 				<div class="col-md-5">
 					<div class="product__gallery"></div>
@@ -338,7 +348,3 @@
 	</body>
 	
 	</html>
-	<script src="js/main.js"></script>
-</body>
-
-</html>

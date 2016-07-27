@@ -10,6 +10,7 @@
 @import 'forms';
 @import 'headings';
 @import 'features';
+@import 'product-grid';
 
 // components
 @import 'components/product-item';
@@ -19,3 +20,5 @@
 @import 'components/checkout';
 @import 'components/maps';
 @import 'components/promo';
+@import 'components/pagination';
+@import 'components/breadcrumbs';

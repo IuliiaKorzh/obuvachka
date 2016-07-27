@@ -1,0 +1,26 @@
+.pagination {
+	padding: 20px;
+	clear: both;
+	font-size: 18px;
+	& ul {
+		text-align: right;
+		margin: 0;
+		& li {
+			display: inline-block;
+			margin: 0 1px;
+			vertical-align: middle;
+			line-height: 12px;
+			padding: 2px 3px;
+			&.active a {
+				color: #7e7f84;
+			}
+			& a {
+				text-decoration: none;
+				color: #000;
+				&:hover {
+					border-bottom: 3px solid $brand-color;
+				}
+			}
+		}
+	}
+}

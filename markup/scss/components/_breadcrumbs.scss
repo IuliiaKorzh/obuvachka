@@ -1,0 +1,35 @@
+.breadcrumbs {
+	padding: 20px;
+	font-size: 14px;
+	& ul {
+		margin: 0 0 -10px;
+		& li {
+			position: relative;
+			display: inline-block;
+			margin: 0 10px;
+			&:not(:last-child):after {
+				content: "";
+     			position: absolute;
+     			top: 0;
+     			bottom: 0;
+     			width: 5px;
+     			height: 5px;
+     			margin: auto 0;
+     			right: -13.5px;
+     			background-color: $brand-color;
+			}			
+			span {
+				color: $brand-color;
+			}
+			& a {
+				color: #7e7f84;
+				text-decoration: none;
+				&:hover{
+					color: $brand-color;
+					text-decoration: underline;	
+				}
+
+			}
+		}
+	}
+}
